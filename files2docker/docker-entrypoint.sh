@@ -15,9 +15,7 @@ print "Xvfb :0     -screen 0 1024x768x16 &"
 print "================================="
 Xvfb :0     -screen 0 1024x768x16 &
 
-echo "wine notepad.exe"
-wine notepad.exe
-sleep 4
+wineboot
 
 if [ $# -eq 0 ]; then
 	exec /bin/bash
